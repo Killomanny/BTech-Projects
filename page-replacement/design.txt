@@ -1,0 +1,26 @@
+IN the main.cpp I implemented 
+
+first FIFO then LRU at last I implemented OPT
+
+In FIFO first I got values from the inp.txt then with using them i creted 
+at first a array of size a (which will have value of no of frames)
+then in b I am storing the page size
+
+then using while loop i am getting the value of c which contains the present adress which we checking
+
+then in while loop first i am checking if the new adress is already present if present i am leaving 
+else i am seeing if all elements in a is full or not if full i am remving the first accessed item 
+else i am adding it to the frame which is not used till now
+
+Then in LRU also same for getting the values from the file named inp.txt
+
+except that here if here while checking for a new adress if already present then i am shifting
+the element which accesed now to the last of array by moving the elements
+
+else same like did in the FIFO
+
+Now lets come to OPT here I am first storing all valuues accessed for reading into 
+a vector named v1 and from here using the technique taught in class for seeing the OPT 
+by doing Brute Force
+
+and finally printing the output of all faults into console if anny occured

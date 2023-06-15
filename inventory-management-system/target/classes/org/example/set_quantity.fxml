@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?maintenence.import.java ?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.SetQuantity"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="225.0" layoutY="22.0" prefHeight="97.0" prefWidth="701.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="toplabel" layoutX="205.0" layoutY="23.0" text="Summary" textFill="#ffffff" >
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="back" layoutX="535.0" layoutY="22.0" mnemonicParsing="false" onAction="#backtonewpurchase" text="Back" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="22.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="211.0" layoutY="153.0" text="Product Type" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="153.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="214.0" layoutY="222.0" text="Brand" AnchorPane.leftAnchor="214.0" AnchorPane.topAnchor="223.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="211.0" layoutY="293.0" text="Model" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="293.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="add" layoutX="389.0" layoutY="504.0" mnemonicParsing="false" onAction="#purchasing" text="Purchase" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="504.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="214.0" layoutY="430.0" text="Quantity" AnchorPane.leftAnchor="214.0" AnchorPane.topAnchor="430.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="quantity" layoutX="389.0" layoutY="430.0" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="430.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label fx:id="ptype" layoutX="390.0" layoutY="153.0" text="Label" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="153.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="brand" layoutX="390.0" layoutY="223.0" text="Label" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="223.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="model" layoutX="390.0" layoutY="293.0" text="Label" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="293.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="214.0" layoutY="362.0" text="Cost Per Item" AnchorPane.leftAnchor="214.0" AnchorPane.topAnchor="362.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="costper" layoutX="390.0" layoutY="362.0" text="Label" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="362.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

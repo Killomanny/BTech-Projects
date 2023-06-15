@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.SupplierInfo"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="240.0" layoutY="18.0" style="-fx-background-color: #2D75E8;" prefHeight="92.0" prefWidth="704.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="supplierinfo" layoutX="197.0" layoutY="20.0" text="Supplier Info" underline="true" textFill="white" >
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="back" layoutX="534.0" layoutY="17.0" mnemonicParsing="false" onAction="#backtorespectiveafterlogin" text="Back" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="200.0" layoutY="120.0" text="Full Name" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="120.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="202.0" layoutY="175.0" text="Supplier ID" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="180.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="199.0" layoutY="247.0" text="Email Id" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="247.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="200.0" layoutY="318.0" text="Contact no" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="318.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="name" layoutX="361.0" layoutY="120.0" text="Label" AnchorPane.leftAnchor="361.0" AnchorPane.topAnchor="120.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="sid" layoutX="361.0" layoutY="180.0" text="Label" AnchorPane.leftAnchor="361.0" AnchorPane.topAnchor="180.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="emailid" layoutX="361.0" layoutY="247.0" text="Label" AnchorPane.leftAnchor="361.0" AnchorPane.topAnchor="247.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="contactno" layoutX="361.0" layoutY="318.0" text="Label" AnchorPane.leftAnchor="361.0" AnchorPane.topAnchor="318.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,36 @@
+This program stores all its data in the subfolder named DATA.
+
+
+The data-storing scheme is as shown below:
+
+1)Admins.txt stores the list of admins in IITH along with there passwords in the following manner.
+<Admin1>
+<pass1>
+<Admin2>
+<pass2>
+.
+.
+so on.
+
+2)faculty.txt stores the list of faculty in IITH along with there passwords similar to the scheme shown above.
+
+3)students.txt stores the list of students admitted in IITH with there data stored according to the scheme shown below.
+<student1_roll>
+<student1_pass>
+<student1_name>
+<student1_branch>
+<student1_program>
+
+4)Each faculty has their own .txt file named after their name which stores the course_codes of the courses to which they are an instructor.
+For example "Faculty1.txt" stores the codes to the courses to which Faculty1 is an instructor.
+
+5)Each student has their own .txt files named after their roll_numbers which stores the courses they are enrolled to.
+For example StudentA has the roll number roll1 and the file "roll1.txt" stores the courses to which he/she is enrolled.
+
+6)Each course that is being floated or was floated has its own .txt file with the name of its course_code. This file stores the course_instructor name at the top and then stores the name of the students enrolled in it along with their grades.
+For example a course with course_code "course1" will have a .txt file named "course1.txt" which would store data in the following way.
+<course_instructor>
+<enrolled_student_roll1>
+<Not_Yet_Graded/Grade>
+<enrolled_student_roll2>
+<Grade>

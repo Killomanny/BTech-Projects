@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.UserBorrowNewDevice"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="200.0" style="-fx-background-color: #2D75E8;" layoutY="16.0" prefHeight="89.0" prefWidth="773.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="toppagelabel" layoutX="194.0" layoutY="15.0" text="Request Devices" textFill="white">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="backtohomeusers" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotohome" text="Back" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="searchbyid" layoutX="720.0" layoutY="112.0" mnemonicParsing="false" onAction="#openid" text="S" AnchorPane.rightAnchor="30.33333333333337" AnchorPane.topAnchor="112.0" />
+        <TextField fx:id="searchid" layoutX="520.0" layoutY="109.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="109.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label fx:id="labelforsearch" layoutX="418.0" layoutY="114.0" text="Search By ID" AnchorPane.rightAnchor="272.3333333333333" AnchorPane.topAnchor="114.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TableView fx:id="Table" layoutX="61.0" layoutY="203.0" prefHeight="314.0" prefWidth="693.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="203.0">
+            <columns>
+                <TableColumn fx:id="dev_id" prefWidth="75.0" text="P_ID" />
+                <TableColumn fx:id="type" prefWidth="75.0" text="P_Type" />
+                <TableColumn fx:id="model" prefWidth="75.0" text="P_Name" />
+                <TableColumn fx:id="status" prefWidth="75.0" text="Status" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="request" layoutX="60.0" layoutY="454.0" mnemonicParsing="false" onAction="#addtorequestsuser" text="Request" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="60.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="available" layoutX="60.0" layoutY="109.0" mnemonicParsing="false" onAction="#filtersavailabledevices" text="Available" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="109.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label fx:id="errorshowlabel" layoutX="200.0" layoutY="114.0" text="For IITH Users Only" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="114.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="clear" layoutX="520.0" layoutY="152.0" mnemonicParsing="false" onAction="#refreshsamepage" text="Clear" AnchorPane.rightAnchor="209.66666666666663" AnchorPane.topAnchor="152.0" />
+    </children>
+
+</AnchorPane>

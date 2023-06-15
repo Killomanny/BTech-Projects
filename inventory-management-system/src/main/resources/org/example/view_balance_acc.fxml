@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.ViewBalanceAcc"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="200.0" style="-fx-background-color: #2D75E8;" layoutY="25.0" prefHeight="97.0" prefWidth="743.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="top" layoutX="143.0" layoutY="26.0" text="View Balance" textFill="white">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="Back" layoutX="534.0" layoutY="25.0" mnemonicParsing="false" onAction="#goestoaccounthome" text="Back" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="145.0" layoutY="151.0" text="Funds Available" AnchorPane.topAnchor="151.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="145.0" layoutY="219.0" text="Fines collected" AnchorPane.topAnchor="219.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="fundsaccount" layoutX="343.0" layoutY="151.0" text="Label" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="151.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="finesaccount" layoutX="343.0" layoutY="219.0" text="Label" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="219.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

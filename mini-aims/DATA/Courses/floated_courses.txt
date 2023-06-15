@@ -1,0 +1,25 @@
+CS1010
+Discrete Maths
+Faculty1
+MA1110
+Calculus-1
+Faculty2
+MA1120
+Calculus-2
+Faculty3
+AI1110
+Probability And Random Variables
+Faculty1
+ID1050
+Introduction To AI
+Faculty2
+ID1054
+Digital Fabrication
+Faculty5
+LA1870
+Introduction To Cognitive Science
+Faculty4
+CS1000
+Introduction To Computing
+Faculty6
+

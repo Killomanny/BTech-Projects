@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.AdminHomePage"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="139.0" layoutY="20.0" style="-fx-background-color: #2D75E8;" prefHeight="90.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="126.0" layoutY="20.0" text="Admin Home Page" textFill="white">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="users" layoutX="139.0" layoutY="146.0" mnemonicParsing="false" onAction="#viewusers" text="View Users" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="146.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="suppliers" layoutX="139.0" layoutY="216.0" mnemonicParsing="false" onAction="#viewsuppliers" text="View Suppliers" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="216.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="funds" layoutX="285.0" layoutY="146.0" mnemonicParsing="false" onAction="#addfunds" text="Add Funds" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="146.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="managers" layoutX="285.0" layoutY="216.0" mnemonicParsing="false" onAction="#viewmanagers" text="View Managers" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="216.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="back" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#backtologinadmin" text="Back" AnchorPane.rightAnchor="15.333333333333336" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="admininfo" layoutX="139.0" layoutY="284.0" mnemonicParsing="false" onAction="#opensinfo" text="Info" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="284.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.SupplierSaleHistory"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="60.0" layoutY="36.0" style="-fx-background-color: #2D75E8;" prefHeight="91.0" prefWidth="774.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="toplabel" textFill="white" layoutX="105.0" layoutY="20.0" text="Transactions History" >
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="Back" layoutX="708.0" layoutY="20.0" mnemonicParsing="false" onAction="#backtosupphome" text="Back" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TableView fx:id="Table" layoutX="60.0" layoutY="217.0" prefHeight="307.0" prefWidth="679.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="217.0">
+            <columns>
+                <TableColumn fx:id="tid" prefWidth="75.0" text="Transaction ID" />
+                <TableColumn fx:id="type" prefWidth="75.0" text="Type" />
+                <TableColumn fx:id="model" prefWidth="75.0" text="Product" />
+                <TableColumn fx:id="date" prefWidth="75.0" text="Date" />
+                <TableColumn fx:id="amount" prefWidth="75.0" text="Amount" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="search" layoutX="703.0" layoutY="120.0" mnemonicParsing="false" onAction="#searchimnprhistory" text="S" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="120.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TextField fx:id="searchtextfield" layoutX="491.0" layoutY="117.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="120.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label layoutX="329.0" layoutY="125.0" text="Search By Device_ID" AnchorPane.rightAnchor="303.66666666666663" AnchorPane.topAnchor="125.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="clear" layoutX="488.0" layoutY="166.0" mnemonicParsing="false" onAction="#refreshthesamepage" text="Clear" AnchorPane.rightAnchor="232.0" AnchorPane.topAnchor="166.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

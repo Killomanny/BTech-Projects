@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.AdminAddManager"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="225.0" layoutY="22.0" prefHeight="97.0" prefWidth="701.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="toplabel" layoutX="205.0" layoutY="23.0" text="Manager Details" textFill="white" >
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="back" layoutX="535.0" layoutY="22.0" mnemonicParsing="false" onAction="#backtoviewusers" text="Back" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="22.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="211.0" layoutY="153.0" text="Full Name" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="153.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="211.0" layoutY="223.0" text="Date of Birth" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="223.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="211.0" layoutY="293.0" text="Email ID" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="293.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="211.0" layoutY="371.0" text="Contact Number" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="363.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="mname" layoutX="389.0" layoutY="152.0" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="152.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="emailid" layoutX="389.0" layoutY="292.0" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="292.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="Contactnumber" layoutX="389.0" layoutY="362.0" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="362.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label layoutX="213.0" layoutY="427.0" text="Password" AnchorPane.leftAnchor="213.0" AnchorPane.topAnchor="427.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="password" layoutX="389.0" layoutY="429.0" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="429.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <DatePicker fx:id="Dob" layoutX="390.0" layoutY="222.0" prefHeight="32.0" prefWidth="183.0" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="222.0" />
+        <Label fx:id="errorshow" layoutX="589.0" layoutY="499.0" AnchorPane.leftAnchor="589.0" AnchorPane.topAnchor="499.0" />
+        <Label layoutX="211.0" layoutY="493.0" text="Branch" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="493.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="combobox" layoutX="389.0" layoutY="492.0" prefHeight="32.0" prefWidth="186.0" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="492.0" >
+            <items>
+                <FXCollections fx:factory="observableArrayList" >
+                    <String fx:value="Accounts"/>
+                    <String fx:value="Inventory"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Label layoutX="211.0" layoutY="564.0" text="Age" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="564.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="age" layoutX="390.0" layoutY="567.0" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="567.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="add" layoutX="389.0" layoutY="611.0" mnemonicParsing="false" onAction="#addtothedevicadduserstabel" text="Add" AnchorPane.leftAnchor="389.0" AnchorPane.topAnchor="611.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

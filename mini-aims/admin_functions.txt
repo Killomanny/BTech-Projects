@@ -1,0 +1,16 @@
+1)Only a registered admin can add another admin and assign it a pass which cannot be changed later.
+
+2)A registered admin can only delete its own admin_id.
+
+3)Only a registered admin can add a student/faculty to IITH.
+
+4)An admin can remove a student from IITH at any time.
+
+5)An admin can remove a faculty from IITH only if the faculty has no course to whom he/she is an instructor and the course has been graded for all enrolled students.
+
+6)An admin can float a course along with assigning the course_instructor to the course which cannot be changed later on.
+
+7)An admin can remove a course from the floated_courses if it has not been graded for any student that has taken it.
+
+8)An admin can remove a student from a course iff the student has not received any grades yet.
+

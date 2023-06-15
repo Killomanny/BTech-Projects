@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.AdminViewBal"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane layoutX="133.0" layoutY="23.0" style="-fx-background-color: #2D75E8;" prefHeight="91.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="77.0" layoutY="20.0" text="Adding Funds" textFill="white">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button fx:id="back" layoutX="535.0" layoutY="23.0" mnemonicParsing="false" onAction="#backtoadminhome" text="Back" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="23.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="138.0" layoutY="146.0" text="Current balance" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="146.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="currentbalance" layoutX="343.0" layoutY="146.0" text="Label" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="146.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="138.0" layoutY="234.0" text="Add balance" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="234.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="addingbalance" layoutX="343.0" layoutY="233.0" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="233.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="addbalance" layoutX="343.0" layoutY="275.0" mnemonicParsing="false" onAction="#addsbalance" text="Add Balace ">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
